@@ -41,5 +41,47 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **DevOps Engineers:** Facilates cooperation between the developement and automation teams and builds continous integration and continous delivery pipelines to ensure faster devlivery of software. Manages infrastructure and monitors logging and cloud services.
 
+## Technology Stack
+#### Frontend:
+**React.js:** It is an open source Javascript library used to build responsive user interfaces on UI components.
+
+**Tailwind CSS (or Bootstrap):** A utility first CSS framework that allows developers to rapidly build custome interfacesdirectly within HTML.
+
+**React Router:** Used to handle client-side routing navigation in react application.
+
+**Axios / Fetch API:** Used to make HTTP requests to backend services from the frontend.
+
+### Backend:
+**Node.js:** A javascript runtime environment that allows users to write server side logic using javascript
+
+**Express.js:** A minimal and flexible Node.js framework used to build Restful API and handle HTTP requests
+
+**MongoDB:** A NoSQL database used for stroing unstructured or semi-structured data as JSON-like documents
+
+**JWT for authentication:** Used to verify the identity of a user and their permissions for authentication and authorization
+
+### DevOps:
+**Docker:** A containerization tool that packages the ap and its dependencies to ensure consistency across environments.
+
+**Kubernetes:** An orchestration tool used to automate deployment, sclaing and management of containerized applications.
+
+**GitHub Actions:** A CI/CD tool that automates testing, building and deployment of code from GitHub.
+
+**Amazon Web Services:** A cloud platform used to deploy services 
+
+### Testing:
+**Jest:** A testing framework for javascript, commonly used to test frontend and backend logic.
+
+**Cypress:** An end to end testing tool that tests how users interact with the application.
+
+**Postman:** An API testing tool that allows developers anf QA to tests HTTP requests and backend API
+
+**Selenium:** A browser automation tool for testing web applications across different browsers
+
+### Monitoring:
+**Prometheus:** A monitoring system that collects and stores metrics from applications and infrastructure.
+
+**Grafana:** A visaulisation tool used to display monitoring data from prometheus or sources in real time dashbaords.
+
 
 
