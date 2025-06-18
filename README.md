@@ -7,20 +7,6 @@ This project is a full-stack Airbnb clone application that replicates core featu
 - Practice integration of third-party services (e.g. cloud storage, payment APIs).
 - Gain experience with full-stack architecture and deployment.
 
-## Tech Stack
-**Frontend**:
-- React.js 
-- Tailwind CSS (or Bootstrap)
-- React Router
-- Axios / Fetch API
-
-**Backend**:
-- Node.js
-- Express.js
-- MongoDB with Mongoose (or PostgreSQL with Prisma)
-- JWT for authentication
-- Cloudinary / AWS S3 for image uploads
-
 
 ## Features Implemented
 - 🔐 User authentication (register, login, logout)
@@ -33,11 +19,13 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 
 ## Team Roles
-**Backend Developer:**  Engineers the product logic and algorithms that connects the systems together. Controls the server-side logic and maintains API's that connects to components of the application.
+**Backend Developer:** Engineers the product logic and algorithms that connects the systems together. Controls the server-side logic and maintains API's that connects to components of the application.
 
-**Database Administrator:**  Manages the database to ensure data integrity ,performance and security.Ensures that database queries are optimized.
+**Frontend Developer:** Engineers the interface the user interacts with. Ensures that the designs from the UI/UX team is implemented in code.
 
-**Business Analyst:**  This individual performs the tasks of understanding customer business process and translates their needs into requirements, they analyze customer feedback in order to align customer's vision with development.
+**Database Administrator:** Manages the database to ensure data integrity ,performance and security.Ensures that database queries are optimized.
+
+**Business Analyst:** This individual performs the tasks of understanding customer business process and translates their needs into requirements, they analyze customer feedback in order to align customer's vision with development.
 
 **Product Owners:** He/She enusres customer satisfaction in terms of making the customer product a success. They plan the product backlog to ensure that the vision of the customer is met.It is not however technical unlike the BA.
 
@@ -52,5 +40,6 @@ This project is a full-stack Airbnb clone application that replicates core featu
 **Test Automation Engineers:** Fufils the tasks of writing and maintainig a series of repetitive tasks through building a tests scripts that can carry out these tasks in without human involvment.
 
 **DevOps Engineers:** Facilates cooperation between the developement and automation teams and builds continous integration and continous delivery pipelines to ensure faster devlivery of software. Manages infrastructure and monitors logging and cloud services.
+
 
 
