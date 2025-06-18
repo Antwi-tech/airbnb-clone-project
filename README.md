@@ -83,5 +83,37 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **Grafana:** A visaulisation tool used to display monitoring data from prometheus or sources in real time dashbaords.
 
+## Database Structure:
+`users`: Stores information about users registered on the platform.
+- A user can create mulitple preperties
+- A user can write multiple reviews
+- A user can perform many transactions
+
+`property`: Contains details of properties available for booking.
+- A property is owned by one user 
+- A property can have multiple bookings
+- A property can have multiple reviews
+
+`booking`: Stores booking details made by users for properties.
+- A booking belongs to one user 
+- A booking belongs to one property 
+- A booking is associalted with one payment
+
+`payment`: Manages transaction records related to bookings.
+- A payment belongs to one one booking
+- Payment can be made by multiple users
+- Payment must be assocaited to property
+
+`amenity`: Contains a list of amenities available for properties.
+- One property can have many amenities
+- one amenity can belong to many properties
+- An amenity relates with one user 
+
+`review`: Stores reviews submitted by users for properties.
+- Review can be made by one users
+- Review is associated to one property
+- Review is not associated with payment
+
+
 
 
