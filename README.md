@@ -1,14 +1,13 @@
 # Internship Booking Platform
-This is a full-stack **Internship Booking Platform** designed to connect **junior high schools** with **companies** offering short-term internship opportunities. Companies can list at least 2 weeks of availability, and schools can book internship slots for their students, either as part of the academic curriculum or for exposure to real-world experiences.
+This is a full-stack **Internship Booking Platform** designed to connect **junior high schools** with **companies** offering short-term internship opportunities. Companies can list at least 2 weeks of availability, and schools can book internship slots for their students, either as part of the academic curriculum or for exposure to real-world experiences.The platform offers a smooth, Airbnb-style booking experience tailored specifically for internships. Schools manage students and bookings, while companies manage internship offers and availability.
 
 ![Airbnd](image.png)
 
-## Project Goals
-- Build a responsive, interactive web application using a modern tech stack.
-- Implement key functionalities such as user authentication, property listings, and bookings.
-- Practice integration of third-party services (e.g. cloud storage, payment APIs).
-- Gain experience with full-stack architecture and deployment.
-
+## 🎯 Project Goals
+- Provide a centralized system to connect schools with companies.
+- Enable booking of internship slots with real-time availability.
+- Empower students through early exposure to professional environments.
+- Build and deploy a scalable, production-ready full-stack application.
 
 ## Features Implemented
 - 🔐 User authentication (register, login, logout)
