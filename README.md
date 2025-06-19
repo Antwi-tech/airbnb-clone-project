@@ -9,13 +9,15 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 - Empower students through early exposure to professional environments.
 - Build and deploy a scalable, production-ready full-stack application.
 
-## Features Implemented
-- 🔐 User authentication (register, login, logout)
-- 🏠 Browse and search listings
-- 📆 Book properties with date selection
-- 💬 Add reviews for listings
-- 🧑‍💼 Host dashboard to manage listings
-- 📸 Image upload for properties
+
+## 🔑 Features Implemented
+- 🔐 User authentication for schools and companies
+- 🏢 Internship listings with duration and details
+- 📅 Real-time booking system
+- 🧑‍🏫 School dashboard for managing students and bookings
+- 🧑‍💼 Company dashboard for managing availability
+- 📎 Document upload (e.g. internship letters)
+- 💬 Feedback and review system
 - 📱 Fully responsive design
 
 
