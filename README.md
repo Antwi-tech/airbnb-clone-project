@@ -166,13 +166,19 @@ Stores uploaded files like approval letters or internship agreements.
 | `bookings`            | `documents`                         | 1:N                         |
 
 
-## Feature Breakdown:
-- 🙍🏽‍♀ User Managment: User can register , set up a user profile and delete his account
-- 🚘 Property Management: Users create, update and delete their property listing
-- 📅 Booking System: Users can choose a property , select dates and host can reject bookings
-- 💳 Payment Processing: secure checkout with debit card, price breakdown and refund & concellation policies 
-- 🔎 Search Filter: Users can search for properties
-- ✍🏽 Review and Rating: Users leave reviews on product, set ratings, host can respond to reviews which creates trusts
+
+## 📊 Feature Breakdown
+
+| Feature | Description |
+|---------|-------------|
+| 🙍🏽‍♂️ **User Management** | Sign up/login for companies & schools |
+| 🏢 **Internship Listings** | Companies can add/update/delete listings |
+| 📅 **Booking System** | Schools book available internship slots |
+| 📤 **Document Upload** | Upload and view internship letters or confirmations |
+| 🔍 **Search & Filters** | Browse listings by location, type, duration |
+| ✍🏽 **Feedback System** | Leave or view feedback post-internship |
+| 📱 **Responsive Design** | Works seamlessly on desktop and mobile |
+
 
 
 ## 🔐 API Security
