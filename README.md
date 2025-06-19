@@ -93,7 +93,7 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 
 
 
-## 🧱 Database Structure
+## 🧱 Database Design
 This system uses a relational structure between entities to model real-world relationships between schools, companies, and internship processes.
 
 ### **`users`**
