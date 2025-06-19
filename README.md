@@ -3,11 +3,13 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 
 ![Airbnd](image.png)
 
+
 ## 🎯 Project Goals
 - Provide a centralized system to connect schools with companies.
 - Enable booking of internship slots with real-time availability.
 - Empower students through early exposure to professional environments.
 - Build and deploy a scalable, production-ready full-stack application.
+
 
 
 ## 🔑 Features Implemented
@@ -19,6 +21,7 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 - 📎 Document upload (e.g. internship letters)
 - 💬 Feedback and review system
 - 📱 Fully responsive design
+
 
 
 ## Team Roles
@@ -43,6 +46,8 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 **Test Automation Engineers:** Fufils the tasks of writing and maintainig a series of repetitive tasks through building a tests scripts that can carry out these tasks in without human involvment.
 
 **DevOps Engineers:** Facilates cooperation between the developement and automation teams and builds continous integration and continous delivery pipelines to ensure faster devlivery of software. Manages infrastructure and monitors logging and cloud services.
+
+
 
 ## Technology Stack
 #### Frontend:
@@ -87,8 +92,8 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 **Grafana:** A visaulisation tool used to display monitoring data from prometheus or sources in real time dashbaords.
 
 
-## 🧱 Database Structure
 
+## 🧱 Database Structure
 This system uses a relational structure between entities to model real-world relationships between schools, companies, and internship processes.
 
 ### **`users`**
@@ -151,6 +156,7 @@ Stores uploaded files like approval letters or internship agreements.
     - A **booking**
   - Includes metadata (type, upload date, file path)
 
+
 ### 🔁 Summary of Relationships
 
 | Entity                | Related To                          | Type of Relationship        |
@@ -207,6 +213,7 @@ To ensure that our backend APIs are protected from unauthorized access and malic
 5. **HTTPS**
 - All API requests will be made over HTTPS to ensure secure data transmission.
 - **Why it’s important:** Protects user credentials, personal data, and payment information from being intercepted during transmission.
+
 
 
 ## 🚀 CI/CD Pipeline
