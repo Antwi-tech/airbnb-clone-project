@@ -1,6 +1,8 @@
 # Airbnb Clone Project Overview
 This project is a full-stack Airbnb clone application that replicates core features of the Airbnb platform, allowing users to browse, book, and host short-term rentals. The purpose of this project is to gain hands-on experience in building real-world web applications using modern technologies, and to demonstrate proficiency in both frontend and backend development.
 
+![Airbnd](air.jpg)
+
 ## Project Goals
 - Build a responsive, interactive web application using a modern tech stack.
 - Implement key functionalities such as user authentication, property listings, and bookings.
