@@ -120,8 +120,34 @@ This project is a full-stack Airbnb clone application that replicates core featu
 - 📅 Booking System: Users can choose a property , select dates and host can reject bookings
 - 💳 Payment Processing: secure checkout with debit card, price breakdown and refund & concellation policies 
 - 🔎 Search Filter: Users can search for properties
-- ✍🏽 Review and Rating: Users leave reviews on product, set ratings, host can respond to reviews which creates trusts.
+- ✍🏽 Review and Rating: Users leave reviews on product, set ratings, host can respond to reviews which creates trusts
 
 
+## 🔐 API Security
+To ensure that our backend APIs are protected from unauthorized access and malicious attacks, the following security measures will be implemented:
+
+1. **Authentication**
+- We will use **JWT (JSON Web Tokens)** to authenticate users.
+- Only users with valid login credentials will be issued a token, which must be included in all protected API requests.
+- **Why it’s important:** Prevents unauthorized users from accessing protected resources like user profiles, bookings, or property management.
+
+2. **Authorization**
+- Role-based access control (RBAC) will be enforced (e.g., distinguishing between guests and hosts).
+- Certain endpoints (like creating a property) will only be accessible to authenticated hosts.
+- **Why it’s important:** Ensures users only perform actions they’re permitted to (e.g., users can’t delete other people’s bookings).
+
+3. **Rate Limiting**
+- Implement rate limiting using tools like **Express Rate Limit** to control how many requests a client can make in a set time.
+- This helps prevent abuse (e.g., brute force login attempts or DDoS attacks).
+- **Why it’s important:** Protects server resources and improves stability and response time for legitimate users.
+
+4. **Input Validation and Sanitization**
+- Use libraries like **express-validator** to validate incoming requests.
+- Prevent injection attacks (e.g., SQL injection, NoSQL injection, or XSS).
+- **Why it’s important:** Ensures data integrity and protects the backend from malicious payloads.
+
+5. **HTTPS**
+- All API requests will be made over HTTPS to ensure secure data transmission.
+- **Why it’s important:** Protects user credentials, personal data, and payment information from being intercepted during transmission.
 
 
