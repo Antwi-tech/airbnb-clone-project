@@ -86,36 +86,85 @@ This is a full-stack **Internship Booking Platform** designed to connect **junio
 
 **Grafana:** A visaulisation tool used to display monitoring data from prometheus or sources in real time dashbaords.
 
-## Database Structure:
-`users`: Stores information about users registered on the platform.
-- A user can create mulitple preperties
-- A user can write multiple reviews
-- A user can perform many transactions
 
-`property`: Contains details of properties available for booking.
-- A property is owned by one user 
-- A property can have multiple bookings
-- A property can have multiple reviews
+## 🧱 Database Structure
 
-`booking`: Stores booking details made by users for properties.
-- A booking belongs to one user 
-- A booking belongs to one property 
-- A booking is associalted with one payment
+This system uses a relational structure between entities to model real-world relationships between schools, companies, and internship processes.
 
-`payment`: Manages transaction records related to bookings.
-- A payment belongs to one one booking
-- Payment can be made by multiple users
-- Payment must be assocaited to property
+### **`users`**
+Stores profile information for both **schools** and **companies**.
 
-`amenity`: Contains a list of amenities available for properties.
-- One property can have many amenities
-- one amenity can belong to many properties
-- An amenity relates with one user 
+- A user can be a **school** or a **company**
+- A **company user** can:
+  - Create multiple `internship_listings`
+  - Receive multiple `bookings`
+  - Upload `documents`
+  - Receive `feedback` from schools
+- A **school user** can:
+  - Book multiple `internship_listings`
+  - Submit `feedback`
+  - Upload `documents` (e.g. approval letters)
+  - View booking history
 
-`review`: Stores reviews submitted by users for properties.
-- Review can be made by one users
-- Review is associated to one property
-- Review is not associated with payment
+
+### **`internship_listings`**
+Represents internships posted by companies.
+
+- Each listing is **created by one company user**
+- A listing:
+  - Belongs to **one company**
+  - Can have **multiple bookings**
+  - Can receive **multiple feedback entries**
+  - Can have **multiple attached documents**
+- Includes:
+  - Title, description, duration, available dates, location, skills required
+
+
+### **`bookings`**
+Represents a booking made by a school for an internship listing.
+
+- Each booking:
+  - Is **made by one school user**
+  - Is linked to **one internship_listing**
+  - Has a status: `pending`, `approved`, `rejected`, or `completed`
+  - Can be associated with **one or more documents** (e.g. approval letters)
+  - Can trigger a **feedback entry** upon completion
+
+
+### **`feedback`**
+Stores reviews and ratings from schools or companies.
+
+- Each feedback:
+  - Is written by **one user** (school or company)
+  - Is related to **one internship_listing** or **booking**
+  - Includes rating, comments, date
+  - Optional (not required for all bookings)
+
+
+### **`documents`**
+Stores uploaded files like approval letters or internship agreements.
+
+- Each document:
+  - Is uploaded by **one user**
+  - Can be associated with:
+    - An **internship_listing**
+    - A **booking**
+  - Includes metadata (type, upload date, file path)
+
+### 🔁 Summary of Relationships
+
+| Entity                | Related To                          | Type of Relationship        |
+|-----------------------|-------------------------------------|-----------------------------|
+| `users`               | `internship_listings`               | 1:N (Company → Listings)    |
+| `users`               | `bookings`                          | 1:N (School → Bookings)     |
+| `users`               | `feedback`                          | 1:N (User → Feedback)       |
+| `users`               | `documents`                         | 1:N (User → Documents)      |
+| `internship_listings` | `bookings`                          | 1:N                         |
+| `internship_listings` | `feedback`                          | 1:N                         |
+| `internship_listings` | `documents`                         | 1:N                         |
+| `bookings`            | `feedback`                          | 1:1 (optional)              |
+| `bookings`            | `documents`                         | 1:N                         |
+
 
 ## Feature Breakdown:
 - 🙍🏽‍♀ User Managment: User can register , set up a user profile and delete his account
