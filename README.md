@@ -51,7 +51,7 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **Axios / Fetch API:** Used to make HTTP requests to backend services from the frontend.
 
-### Backend:
+#### Backend:
 **Node.js:** A javascript runtime environment that allows users to write server side logic using javascript
 
 **Express.js:** A minimal and flexible Node.js framework used to build Restful API and handle HTTP requests
@@ -60,7 +60,7 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **JWT for authentication:** Used to verify the identity of a user and their permissions for authentication and authorization
 
-### DevOps:
+#### DevOps:
 **Docker:** A containerization tool that packages the ap and its dependencies to ensure consistency across environments.
 
 **Kubernetes:** An orchestration tool used to automate deployment, sclaing and management of containerized applications.
@@ -69,7 +69,7 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **Amazon Web Services:** A cloud platform used to deploy services 
 
-### Testing:
+#### Testing:
 **Jest:** A testing framework for javascript, commonly used to test frontend and backend logic.
 
 **Cypress:** An end to end testing tool that tests how users interact with the application.
@@ -78,7 +78,7 @@ This project is a full-stack Airbnb clone application that replicates core featu
 
 **Selenium:** A browser automation tool for testing web applications across different browsers
 
-### Monitoring:
+#### Monitoring:
 **Prometheus:** A monitoring system that collects and stores metrics from applications and infrastructure.
 
 **Grafana:** A visaulisation tool used to display monitoring data from prometheus or sources in real time dashbaords.
@@ -113,6 +113,14 @@ This project is a full-stack Airbnb clone application that replicates core featu
 - Review can be made by one users
 - Review is associated to one property
 - Review is not associated with payment
+
+## Feature Breakdown:
+- 🙍🏽‍♀ User Managment: User can register , set up a user profile and delete his account
+- 🚘 Property Management: Users create, update and delete their property listing
+- 📅 Booking System: Users can choose a property , select dates and host can reject bookings
+- 💳 Payment Processing: secure checkout with debit card, price breakdown and refund & concellation policies 
+- 🔎 Search Filter: Users can search for properties
+- ✍🏽 Review and Rating: Users leave reviews on product, set ratings, host can respond to reviews which creates trusts.
 
 
 
