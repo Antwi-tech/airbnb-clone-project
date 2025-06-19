@@ -1,8 +1,7 @@
-# Airbnb Clone Project Overview
-This project is a full-stack Airbnb clone application that replicates core features of the Airbnb platform, allowing users to browse, book, and host short-term rentals. The purpose of this project is to gain hands-on experience in building real-world web applications using modern technologies, and to demonstrate proficiency in both frontend and backend development.
-This is a Internship Booking Platform
+# Internship Booking Platform
+This is a full-stack **Internship Booking Platform** designed to connect **junior high schools** with **companies** offering short-term internship opportunities. Companies can list at least 2 weeks of availability, and schools can book internship slots for their students, either as part of the academic curriculum or for exposure to real-world experiences.
 
-![Airbnd](air.jpg)
+![Airbnd](image.png)
 
 ## Project Goals
 - Build a responsive, interactive web application using a modern tech stack.
